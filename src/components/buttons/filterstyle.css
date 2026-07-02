@@ -1,0 +1,62 @@
+.buttonfilter{
+    background-color: var(--akcent);
+    width: 100%;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Kanit-ExtraBold.ttf';
+   font-size: 20px;
+   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.button_bloc{
+    width: 100%;
+    position: relative;
+}
+
+.spisoc_filter{
+    position: absolute;
+    border: 2px solid var(--border);
+    list-style: none;
+    text-align: start;
+    padding: 0px;
+    top: 15px;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Kanit-ExtraBold.ttf';
+    font-size: 20px;
+    color: var(--border);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: var(--fon);
+}
+
+
+
+.spisoc_filter li:hover{
+   background-color: rgba(151, 145, 226, 0.39);
+}
+
+.strelca{
+    width: 16px;
+    transform: rotate(-90deg);
+    transition: 0.5s ease;
+}
+
+.open{
+    transform: rotate(0deg);
+    transition: 0.5s ease;
+}
+
+.visibl{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease;
+}

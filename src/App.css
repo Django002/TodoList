@@ -1,0 +1,32 @@
+
+*{
+  border: none;
+}
+
+
+
+
+
+body{
+  background-color: var(--fon);
+}
+
+html[data-theme='light'] {
+ --akcent: rgba(108, 99, 255, 1);
+ --text: rgba(37, 37, 37, 1);
+ --fon: rgb(255, 255, 255);
+ --border: rgba(108, 99, 255, 1);
+ --deletlith: url('/delet.svg');
+ --renamelith: url('/rename2.svg'); 
+ --secr:rgba(195, 193, 229, 1);
+}
+
+html[data-theme='dark'] {
+ --akcent: rgba(108, 99, 255, 1);
+ --text: rgb(255, 255, 255);
+ --fon: rgb(0, 0, 0);
+ --border:  rgb(255, 255, 255);
+ --deletlith: url('/deletdarctheme.svg');
+ --renamelith: url('/renamedarktheme.svg'); 
+ --secr:rgb(255, 255, 255);
+}

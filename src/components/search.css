@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Kanit-ExtraBold.ttf';
+    src: url(/src/font/Kanit-ExtraBold.ttf);
+}
+
+.bloc{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.zagalovoc{
+    text-align: center;
+    color: var(--border);
+    font-family: 'Kanit-ExtraBold.ttf';
+}
+
+.bloc_seacr{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--border);
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;  
+}
+
+.button_search{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.input_seacrh{
+    border: none;
+    width: 100%;
+    outline: none;
+    color: var(--text);
+    background-color: rgba(240, 248, 255, 0);
+}
+
+
+
+.input_seacrh::placeholder{
+    color: var(--secr);
+}
+.bloc_buttons{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+
+.bloc_seacr:focus-within{
+  box-shadow: 0px 0px 10px -1px var(--border);
+}

@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Kanit-ExtraBold.ttf';
+    src: url(/src/font/Kanit-ExtraBold.ttf);
+}
+
+.bugraundbloc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(56, 56, 56, 0.473);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.blocmodal{
+    border: 2px solid var(--border);
+    background-color: var(--fon);
+    min-width: 300px;
+    min-height: 300px;
+    text-align: center;
+   border-radius: 20px;
+}
+
+.addinput{
+    width: 90%;
+    height: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid var(--border);
+    color: var(--text);
+    outline: none;
+}
+
+.addinput::placeholder{
+    color: var(--secr);
+    font-family:'Kanit-ExtraBold.ttf' ;
+}
+
+.addinput:focus-within{
+  box-shadow: 0px 0px 10px -1px var(--border);
+}
+
+.blocmodal h2{
+    color: var(--text);
+    font-family: 'Kanit-ExtraBold.ttf';
+}
+
+.modalbuttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 130px;
+}
+
+.modalbutton{
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(108, 99, 255, 1);
+    box-shadow: 0px 0px 10px -1px rgba(108, 99, 255, 1);
+}
+
+.cansel{
+    background-color: var(--fon);
+    color: rgba(108, 99, 255, 1);
+    font-family:'Kanit-ExtraBold.ttf' ;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.ad{
+    background-color: rgba(108, 99, 255, 1);
+    color: #fff;
+    font-family:'Kanit-ExtraBold.ttf' ;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.ad:active{
+    background-color:rgb(69, 65, 150);
+    transform: scale(0.9);
+    transition: 0.1s ease;
+}
+
+.cansel:active{
+    background-color:rgba(108, 99, 255, 1);
+    transform: scale(0.9);
+    transition: 0.1s ease;
+    color: black;
+}
+
+.visibl{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s ease;
+}
